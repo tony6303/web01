@@ -34,7 +34,7 @@ zen코드 = ul>li*3>a[href="#"]{메인메뉴$}+ul>li*2>a[href="#"]{서브메뉴$
 	</li>
 </ul>
 
-zen코드 = table[border="1"]>tr>th*2{제목$}+(tr>td*2{내용$})*3 
+zen코드 = table[border="1"]>tr>th{기간}+th{대외활동 내용}+(tr>td*2{내용$})*3 
 
 <table border="1">
 	<tr>
@@ -52,6 +52,20 @@ zen코드 = table[border="1"]>tr>th*2{제목$}+(tr>td*2{내용$})*3
 			<td>내용1</td>
 			<td>내용2</td>
 		</tr>
+	</tr>
+</table>
+
+zen코드 = tr>th{기간}+th{대외활동 내용}+(tr>td*2{없음})
+<table border="1">
+	<tr>
+		<th>
+			<th>기간</th>
+			<th>대외활동 내용</th>
+			<tr>
+				<td>없음</td>
+				<td>없음</td>
+			</tr>
+		</th>
 	</tr>
 </table>
 
