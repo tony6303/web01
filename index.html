@@ -1,72 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to 이대엽's' Site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to With-Calli</title>
+
+	<style>
+		* {
+			margin: 0;
+			font-family: sans-serif;
+		}
+		body {
+			width: 950px;
+			background-color: #e5e5e5;
+			margin: 0px auto;
+			color: white;
+		}
+		a { text-decoration: none;
+		color: white; }
+
+		li { list-style: none;}
+
+		#page {
+			background-color: #252525;
+			margin: 40px 0px;
+			padding: 20px;
+			border-radius: 20px;
+		}
+
+		.navi {
+			margin: 15px;
+			border-top: 1px solid #47ece5;
+			border-bottom: 1px solid #47ece5;
+			height: 60px;
+		}
+		.navi>ul>li{
+			display: inline-block;
+			padding: 5px 50px;
+			line-height: 50px;
+		}
+		.navi>ul>li:hover{
+			background-color: #47ece5;
+		}
+		.main{
+			float: left;
+			border-right: 1px solid #47ece5;
+			max-width: 630px;
+			padding: 20px;
+		}
+		.right{
+			float: right;
+			max-width: 230px;
+		}
+		footer{
+			margin: 40px 0px;
+			padding: 20px;
+			clear: both;
+		}
+	</style>
 </head>
 <body>
-	<h1>웹프로그래밍 활용</h1>
-	<h3>컴퓨터소프트웨어공학과 <br> 20153239 이대엽 입니다.</h3>
-
-zen코드 = ul>li*3>a[href="#"]{메인메뉴$}+ul>li*2>a[href="#"]{서브메뉴$}
-
-<ul>
-	<li>
-		<a href="#">메인메뉴1</a>
-		<ul>
-			<li><a href="#">서브메뉴1</a></li>
-			<li><a href="#">서브메뉴2</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#">메인메뉴2</a>
-		<ul>
-			<li><a href="#">서브메뉴1</a></li>
-			<li><a href="#">서브메뉴2</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#">메인메뉴3</a>
-		<ul>
-			<li><a href="#">서브메뉴1</a></li>
-			<li><a href="#">서브메뉴2</a></li>
-		</ul>
-	</li>
-</ul>
-
-zen코드 = table[border="1"]>tr>th{기간}+th{대외활동 내용}+(tr>td*2{내용$})*3 
-
-<table border="1">
-	<tr>
-		<th>기간</th>
-		<th>대외활동 내용</th>
-		<tr>
-			<td>내용1</td>
-			<td>내용2</td>
-		</tr>
-		<tr>
-			<td>내용1</td>
-			<td>내용2</td>
-		</tr>
-		<tr>
-			<td>내용1</td>
-			<td>내용2</td>
-		</tr>
-	</tr>
-</table>
-<br>
-zen코드 = table[border="1"]>tr>th{기간}+th{대외활동 내용}+(tr>td*2{없음})
-<table border="1">
-	<tr>
-		<th>기간</th>
-		<th>대외활동 내용</th>
-		<tr>
-			<td>없음</td>
-			<td>없음</td>
-		</tr>	
-	</tr>
-</table>
-
-
+	<div id="page">
+	<header>
+		<h1>With-Calli</h1>
+	</header>
+	<nav>
+		<div class="navi">
+			<ul>
+				<li><a href="sub01.html">메뉴_01</a></li>
+				<li><a href="sub02.html">메뉴_02</a></li>
+				<li><a href="sub03.html">메뉴_03</a></li>
+				<li><a href="sub04.html">메뉴_04</a></li>
+				<li><a href="sub05.html">메뉴_05</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="main">
+		<article>
+			<h3>오디오 교육</h3>
+			<audio src="../web03/media/wheesung.mp3" controls="true"></audio>
+			<hr>
+			<h3>캘리 동영상 교육</h3>
+			<video src="../web03/media/movie.mp4" controls="true" autoplay loop></video>
+		</article>
+		<article>
+			<h3>캘리 작품</h3>
+			<img src="../web03/images/photo1.jpg" alt="">
+			<img src="../web03/images/photo2.jpg" alt="">
+			<img src="../web03/images/photo3.jpg" alt="">
+			<img src="../web03/images/photo4.jpg" alt="">
+			<img src="../web03/images/photo5.jpg" alt="">
+		</article>
+	</section>
+	<aside class="right">
+		<h3>Login</h3>
+		<form action="#" method="post">
+			ID : <input type="text" name="deu_webclass_id"> <br>
+			암호 : <input type="password" name="pw"> <br>
+			학년 : <input type="radio" value="1" name="grade">1학년</input>
+			<input type="radio" value="2" name="grade">2학년</input>
+			<input type="radio" value="3" name="grade">3학년</input>
+			<input type="radio" value="4" name="grade">4학년</input><br>
+			취미 :
+			<input type="checkbox" value="h1" name="hobby">영화</input>
+			<input type="checkbox" value="h2" name="hobby">음악감상</input>
+			<input type="checkbox" value="h3" name="hobby">독서</input>
+			<input type="submit" value="로그인">
+			<input type="reset" value="취소">
+			<br>
+		</form>
+	</aside>
+	<footer>
+		Copyright@LeedaeYeob
+	</footer>
+	</div>
 </body>
 </html>
