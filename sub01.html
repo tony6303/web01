@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- 아이콘 CSS -->
-    <link rel="stylesheet" href="./css/w3.css"> <!-- 스타일 CSS -->
+    <link rel="stylesheet" href="../css/w3.css"> <!-- 스타일 CSS -->
 	<title>Welcome to With-Calli </title>
     <style type="text/css">
         #page {
@@ -32,34 +32,39 @@
 	<header>
  		<h1><a href="index.html"><i class="fa fa-bars"></i>With-Calli</a></h1>
     </header>
-	<nav>
+	<nav class="w3-container w3-margin-bottom">
 		<div class="navi w3-bar w3-orange">
 				<ul>
-					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub01.html">쇼핑</a></li>
-					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub02.html">드림그래퍼</a></li>
-					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub03.html">교육</a></li>
-					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub04.html">패키지</a></li>
-					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub05.html">커뮤니티</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow">
+                        <a href="sub01.html">메뉴_01</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow">
+                        <a href="sub02.html">메뉴_02</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow">
+                        <a href="sub03.html">메뉴_03</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow">
+                        <a href="sub04.html">메뉴_04</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow">
+                        <a href="sub05.html">메뉴_05</a></li>
 				</ul>
 		</div>	
 	</nav>
-    <section>
+    <section class="w3-container w3-margin-top w3-cell" style="max-width: 700px;">
         <article class="event" style="border:1px solid gray; height: 200px;">
             <h2>event 작품 포함  </h2>
             javascript 작업 
         </article>
     	<article>
     		<h3>캘리 작품</h3>
-    		<img src="./images/photo1.jpg" alt="">
-    		<img src="./images/photo2.jpg" alt="">
-    		<img src="./images/photo3.jpg" alt="">
-    		<img src="./images/photo4.jpg" alt="">
-    		<img src="./images/photo5.jpg" alt="">
+    		<img src="./images/photo1.jpg" class="w3-border w3-padding" alt="">
+    		<img src="./images/photo2.jpg" class="w3-border w3-padding" alt="">
+    		<img src="./images/photo3.jpg" class="w3-border w3-padding" alt="">
+    		<img src="./images/photo4.jpg" class="w3-border w3-padding" alt="">
+    		<img src="./images/photo5.jpg" class="w3-border w3-padding" alt="">
     	</article>
     <article class="package">패키지
     <!--table[border="1"]>tr>th{제목$$}*3+(tr>td{교육$$}*3)*3 -->
-    <table border="1">
-        <tr >
+    <table class="w3-table w3-bordered w3-teal w3-centered w3-hoverable">
+        <tr>
             <th>패키지</th>
             <th>내용</th>
             <th>금액</th>
@@ -83,29 +88,29 @@
     </table>
     </article>
     </section>
-    <aside class="right">
-        <div class="login">
+    <aside class="right w3-cell" style="max-width: 200px;">
+        <div class="login w3-container w3-blue w3-margin">
         <h3 >Log In</h3>
-            <form action="#" >
-                 아이디  :<input type="text" name="id"/> <br />
-                 패스워드:<input type="password" name="pass"/> <br /><br />
-                <input type="submit" value="로그인" />
-                <input type="reset" value="초기화" /><br />
+        </div>
+        <div>
+            <form action="#" class="w3-container" >
+                 아이디  :<input class="w3-input" type="text" name="id"/> <br />
+                 패스워드:<input class="w3-input" type="password" name="pass"/> <br /><br />
+                <input class="w3-btn w3-blue" type="submit" value="로그인" />
+                <input class="w3-btn w3-blue" type="reset" value="초기화" /><br />
                 <a href="register.html" target="_blank" id="register">회원가입</a>
                 <a href="#" id="forgot">비밀번호분실</a>
             </form>
         </div>
     </aside>
     <footer>
-        
         <div class="w3-container" >
           <h5> Follow Us</h5>
-          <a href="https://www.facebook.com/swhwang64"><i class="fa fa-facebook" style="font-size:30px;color:white"></i></a>
-          <a href="https://twitter.com/sense64"><i class="fa fa-twitter" style="font-size:30px;color:white"></i></a>
+          <a href="#"><i class="fa fa-facebook" style="font-size:30px;color:white"></i></a>
+          <a href="#"><i class="fa fa-twitter" style="font-size:30px;color:white"></i></a>
           <a href="#"><i class="fa fa-instagram" style="font-size:30px;color:white"></i></a>
           <br /><br/>
-          47340 부산광역시 부산진구 엄광로 176 (가야동)Tel.051-890-1114Fax.051-890-1234
-          Copyright (c) 2020 SeonwonHwang <br/>
+          Copyright (c) 2020 LeeDaeYeob <br/>
       </div>
     </footer>
 </div>
