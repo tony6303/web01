@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- 아이콘 CSS -->
+    <link rel="stylesheet" href="../css/w3.css"> <!-- 스타일 CSS -->
+	<title>Welcome to With-Calli </title>
+    <style type="text/css">
+        #page {
+            background-color: #252525;
+            margin: 40px 0px;
+            padding: 20px;
+            border-radius: 20px;
+            color: white;
+        }
+        * { margin: 0;
+            font-family: "맑은 고딕", "Malgun Gothic", sans-serif;
+    
+             }
+        body{
+            width: 950px;
+            margin: 0px auto;
+            background-color: #E5e5e5;
+        }
+        a { text-decoration: none; }
+        li { list-style: none; }
+    </style>
+</head>
+<body>
+    <div id="page">
+	<header>
+ 		<h1><a href="index.html"><i class="fa fa-bars"></i>With-Calli</a></h1>
+    </header>
+	<nav>
+		<div class="navi w3-bar w3-orange">
+				<ul>
+					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub01.html">쇼핑</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub02.html">드림그래퍼</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub03.html">교육</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub04.html">패키지</a></li>
+					<li class="w3-bar-item w3-button w3-hover-yellow"><a href="sub05.html">커뮤니티</a></li>
+				</ul>
+		</div>	
+	</nav>
+    <section>
+        <article class="event" style="border:1px solid gray; height: 200px;">
+            <h2>event 작품 포함  </h2>
+            javascript 작업 
+        </article>
+    	<article>
+    		<h3>캘리 작품</h3>
+    		<img src="../images/photo1.jpg" alt="">
+    		<img src="../images/photo2.jpg" alt="">
+    		<img src="../images/photo3.jpg" alt="">
+    		<img src="../images/photo4.jpg" alt="">
+    		<img src="../images/photo5.jpg" alt="">
+    	</article>
+    <article class="package">패키지
+    <!--table[border="1"]>tr>th{제목$$}*3+(tr>td{교육$$}*3)*3 -->
+    <table border="1">
+        <tr >
+            <th>패키지</th>
+            <th>내용</th>
+            <th>금액</th>
+        </tr>
+            <tr>
+                <td>족자1</td>
+                <td>재료 및 교육비</td>
+                <td>50000</td>
+            </tr>
+            <tr>
+                <td>액자만들기</td>
+                <td>재료 및 교육비</td>
+                <td>70000</td>
+            </tr>
+            <tr>
+                <td>LED무드등</td>
+                <td>재료 및 교육비</td>
+                <td>100000</td>
+            </tr>
+        </tr>
+    </table>
+    </article>
+    </section>
+    <aside class="right">
+        <div class="login">
+        <h3 >Log In</h3>
+            <form action="#" >
+                 아이디  :<input type="text" name="id"/> <br />
+                 패스워드:<input type="password" name="pass"/> <br /><br />
+                <input type="submit" value="로그인" />
+                <input type="reset" value="초기화" /><br />
+                <a href="register.html" target="_blank" id="register">회원가입</a>
+                <a href="#" id="forgot">비밀번호분실</a>
+            </form>
+        </div>
+    </aside>
+    <footer>
+        
+        <div class="w3-container" >
+          <h5> Follow Us</h5>
+          <a href="https://www.facebook.com/swhwang64"><i class="fa fa-facebook" style="font-size:30px;color:white"></i></a>
+          <a href="https://twitter.com/sense64"><i class="fa fa-twitter" style="font-size:30px;color:white"></i></a>
+          <a href="#"><i class="fa fa-instagram" style="font-size:30px;color:white"></i></a>
+          <br /><br/>
+          47340 부산광역시 부산진구 엄광로 176 (가야동)Tel.051-890-1114Fax.051-890-1234
+          Copyright (c) 2020 SeonwonHwang <br/>
+      </div>
+    </footer>
+</div>
+</body>
+</html>
